@@ -19,7 +19,6 @@ class PortfolioServiceTest {
 
     @Mock
     private PortfolioRepository portfolioRepository;
-
     @InjectMocks
     private PortfolioService portfolioService;
 
