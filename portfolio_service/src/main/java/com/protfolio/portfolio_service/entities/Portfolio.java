@@ -28,18 +28,5 @@ public class Portfolio {
     private String phoneNumber;
     private String specialization;
 
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL)
-    private List<Project> projects;
 
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL)
-    private List<Education> education;
-
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL)
-    private List<Experience> workExperience;
-
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL)
-    private List<Technology> technologies;
-
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL)
-    private List<Certificate> certificates;
 }

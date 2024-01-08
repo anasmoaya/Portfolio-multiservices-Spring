@@ -22,7 +22,8 @@ public class Technology {
     private String name;
     private String image;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name = "portfolio_id")
     private Portfolio portfolio;
 
     // Getters and Setters
